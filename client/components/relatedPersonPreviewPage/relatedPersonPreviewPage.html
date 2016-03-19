@@ -1,0 +1,11 @@
+<template name="relatedPersonPreviewPage">
+  <div id="relatedPersonPreviewPage" class="fullheight padded page">
+    {{> recordHeader type="record" url="relatedPersons" spreadsheet=false  imageGrid=false}}
+      <div id="relatedPersonPreviewCard" class="card-contents" style="{{getOpacity}}">
+        <h2 id="relatedPersonfullNameText">{{profile.name}}</h2>
+        <p id="notesText">
+          {{description}}
+        </p>
+      </div>
+  </div>
+</template>
