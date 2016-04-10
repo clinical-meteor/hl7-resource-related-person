@@ -1,4 +1,4 @@
-##clinical:hl7-resource-relatedPerson
+##clinical:hl7-resource-related-person
 
 HL7 FHIR Resource - RelatedPerson
 
@@ -7,7 +7,7 @@ HL7 FHIR Resource - RelatedPerson
 
 ````bash
 # to add hl7 resource schemas and rest routes
-meteor add clinical:hl7-resource-relatedPerson
+meteor add clinical:hl7-resource-related-person
 
 # to initialize default data
 INITIALIZE=true meteor
