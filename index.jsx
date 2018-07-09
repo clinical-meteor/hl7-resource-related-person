@@ -4,7 +4,6 @@ import RelatedPersonsPage from './client/react/RelatedPersonsPage';
 import RelatedPersonTable from './client/react/RelatedPersonTable';
 import RelatedPersonDetail from './client/react/RelatedPersonDetail';
 
-import { RelatedPerson, RelatedPersons, RelatedPersonSchema } from './lib/RelatedPersons';
 
 var DynamicRoutes = [{
   'name': 'RelatedPersonPage',
@@ -25,8 +24,7 @@ export {
 
   RelatedPersonsPage,
   RelatedPersonTable,
-  RelatedPersonDetail,
-  RelatedPersonCard
+  RelatedPersonDetail
 };
 
 

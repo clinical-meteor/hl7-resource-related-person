@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hl7-resource-related-person',
-  version: '1.2.2',
+  version: '1.2.3',
   summary: 'HL7 FHIR Resource - Related Person',
   git: 'https://github.com/clinical-meteor/hl7-resource-related-person',
   documentation: 'README.md'
