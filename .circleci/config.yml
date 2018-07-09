@@ -10,7 +10,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/clinical-meteor/hl7-resource-person 
+    working_directory: ~/clinical-meteor/hl7-resource-related-person 
     parallelism: 1
     shell: /bin/bash --login
 
@@ -109,14 +109,14 @@ jobs:
 
     - run: cd ../baseline && meteor npm install
     - run: cd ../baseline && meteor npm install react lodash
-    - run: cd ../baseline && mkdir packages && cd packages && mkdir hl7-resource-person 
-    - run: cp -R ./* ../baseline/packages/hl7-resource-person 
-    - run: cd ../baseline/packages/hl7-resource-person && pwd
+    - run: cd ../baseline && mkdir packages && cd packages && mkdir hl7-resource-related-person 
+    - run: cp -R ./* ../baseline/packages/hl7-resource-related-person 
+    - run: cd ../baseline/packages/hl7-resource-related-person && pwd
     - run: cd ../baseline/packages && ls -la
 
     - run: cd ../baseline && npm i --save-dev selenium-webdriver@3.0.0-beta-2 chromedriver
     - run: cd ../baseline && meteor add dispatch:mocha practicalmeteor:chai
-    - run: cd ../baseline && meteor add clinical:hl7-resource-person 
+    - run: cd ../baseline && meteor add clinical:hl7-resource-related-person 
     - run: cd ../baseline && mkdir imports 
     - run: cp tests/RelatedPersons.tests.js ../baseline/imports/
 
